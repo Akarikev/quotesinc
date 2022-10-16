@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*    font-family: 'Caesar Dressing', cursive;
+
+    font-family: 'Uncial Antiqua', cursive;*/
+
+body {
+    /* background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 26%, rgba(182, 103, 29, 1) 91%);
+        */
+    background-image: url(/img/danny-robert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    font-family: 'Prata', serif;
+}
+
+.container {
+    padding-left: 15em;
+    padding-right: 15em;
+    margin-top: 2em;
+}
+
+.mobile-nav.open-nav {
+    transform: translateX(0);
+}
+
+span {
+    display: none;
+}
+
+h2,
+button {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+button {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(2, 0, 36);
+    text-decoration-line: underline;
+    text-decoration-style: "solid";
+    text-decoration-color: rgba(255, 255, 255, 0.84);
+    text-decoration-thickness: 3px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+div .random {
+    border-radius: 50%;
+}
+
+.random {
+    text-align: center;
+    color: rgb(2, 0, 36);
+    width: 50px;
+    height: 50px;
+    backdrop-filter: blur(8px) saturate(107%);
+    -webkit-backdrop-filter: blur(8px) saturate(107%);
+    background-color: rgba(17, 25, 40, 0.21);
+    border-radius: 12px;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 52%;
+    margin-left: -50px;
+    top: 82%;
+    margin-top: -50px;
+}
+
+.random:hover {
+    background-color: rgba(17, 25, 40, 0.41);
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+
+.random:hover i {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transition: all .7s ease-in-out;
+}
+
+.random:active i {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition: all .9s ease;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-left: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 0.4s ease;
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgb(2, 0, 36);
+    -webkit-background-clip: text;
+    text-decoration-line: underline;
+    text-decoration-style: "solid";
+    text-decoration-color: rgba(255, 255, 255, 0.84);
+    text-decoration-thickness: 2px;
+}
+
+.image {
+    margin-top: 1.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 160px;
+    height: 170px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    backdrop-filter: blur(8px) saturate(107%);
+    -webkit-backdrop-filter: blur(8px) saturate(107%);
+    background-color: rgba(17, 25, 40, 0.21);
+    border-radius: 12px;
+    border: 1px solid transparent;
+    width: 600px;
+    text-align: center;
+    margin-top: 1.9rem;
+    padding: 3rem;
+    color: white;
+    position: relative;
+    box-shadow: 26px 26px 52px transparent, -26px -26px 52px transparent;
+}
+
+.card:hover {
+    background-color: rgba(17, 25, 40, 0.41);
+    cursor: pointer;
+    transition: all .6s ease-in-out;
+}
+
+.card #quote-author {
+    position: absolute;
+    right: 0;
+    padding: 1rem;
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .nav-bar {
+        display: none;
+    }
+    h1 {
+        float: left;
+        font-size: small;
+    }
+    img {
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+    span {
+        display: block;
+        font-size: 2rem;
+        float: right;
+        color: #fff;
+        cursor: pointer;
+    }
+    .random {
+        position: absolute;
+        left: 55%;
+        margin-left: -50px;
+        top: 90%;
+        margin-top: -50px;
+    }
+    .nav-bar ul {
+        display: none;
+    }
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgb(2, 0, 36);
+        transform: translateX(100%);
+        transition: all 0.4s ease;
+        z-index: 99999;
+    }
+    .mobile-nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 10rem;
+        text-align: center;
+    }
+    .mobile-nav ul li {
+        margin: 1.5rem 0;
+    }
+    .mobile-nav ul li a {
+        font-size: 1.5rem;
+    }
+    a:hover {
+        color: rgb(126, 122, 218);
+    }
+    #close {
+        color: #FFF;
+        font-size: 2rem;
+        cursor: pointer;
+        margin-top: 2rem;
+    }
+    #close:hover {
+        color: rgb(126, 122, 218);
+    }
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .container {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .nav-bar {
+        display: none;
+    }
+    h1 {
+        float: left;
+        font-size: small;
+    }
+    img {
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+    span {
+        display: block;
+        font-size: 2rem;
+        float: right;
+        color: #fff;
+        cursor: pointer;
+    }
+    .random {
+        margin-top: -60px;
+    }
+    .mobile-nav button {
+        display: block;
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .nav-bar ul {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgb(2, 0, 36);
+        transform: translateX(100%);
+        transition: all 0.4s ease;
+        z-index: 99999;
+    }
+    .mobile-nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 10rem;
+        text-align: center;
+    }
+    .mobile-nav ul li {
+        margin: 1.5rem 0;
+    }
+    .mobile-nav ul li a {
+        font-size: 1.5rem;
+    }
+    #close {
+        color: #FFF;
+        font-size: 2rem;
+        cursor: pointer;
+        margin-top: 2rem;
+    }
+    .card {
+        width: 100%;
+    }
+}
