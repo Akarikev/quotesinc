@@ -78,11 +78,7 @@ div .random {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    left: 52%;
-    margin-left: -50px;
-    top: 82%;
-    margin-top: -50px;
+    margin: 0 auto;
 }
 
 .random:hover {
@@ -172,7 +168,8 @@ img {
     border: 1px solid transparent;
     width: 600px;
     text-align: center;
-    margin-top: 1.9rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     padding: 3rem;
     color: white;
     position: relative;
@@ -215,11 +212,10 @@ img {
         cursor: pointer;
     }
     .random {
-        position: absolute;
-        left: 55%;
-        margin-left: -50px;
-        top: 90%;
-        margin-top: -50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: .1rem;
     }
     .nav-bar ul {
         display: none;
@@ -288,17 +284,7 @@ img {
         color: #fff;
         cursor: pointer;
     }
-    .random {
-        margin-top: -60px;
-    }
-    .mobile-nav button {
-        display: block;
-        background: transparent;
-        border: none;
-        color: #fff;
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
+    .random {}
     .nav-bar ul {
         display: none;
     }
